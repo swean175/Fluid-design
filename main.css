@@ -38,6 +38,8 @@ section{
     width: 30%;
     padding: 1em;
     font-size: 2rem;
+    opacity: 70%;
+    transition: 2s;
   }
 
 
