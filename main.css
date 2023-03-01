@@ -38,10 +38,14 @@ section{
     width: 30%;
     padding: 1em;
     font-size: 2rem;
-    opacity: 70%;
-    transition: 2s;
+   animation: text alternate-reverse 2s 0s infinite;
   }
 
+
+  @keyframes text{
+from{   opacity: 60%;}
+to{   opacity: 90%;}
+  }
 
 .bottom,
 .top{
