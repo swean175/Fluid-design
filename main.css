@@ -8,6 +8,7 @@ body{
     margin:0;
     padding:0;
     font-size: 20px;
+    font-family: 'Mountains of Christmas', cursive;
 }
 
 
@@ -20,7 +21,11 @@ body{
     flex-direction: column;
    justify-content:space-between;
    overflow: hidden;
-   background-color: aqua;
+   background: rgb(18,93,124);
+   background: -moz-radial-gradient(circle, rgba(18,93,124,1) 34%, rgba(0,255,255,1) 100%);
+   background: -webkit-radial-gradient(circle, rgba(18,93,124,1) 34%, rgba(0,255,255,1) 100%);
+   background: radial-gradient(circle, rgba(18,93,124,1) 34%, rgba(0,255,255,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#125d7c",endColorstr="#00ffff",GradientType=1);
 
    
 }
@@ -38,6 +43,15 @@ section{
     width: 30%;
     padding: 1em;
     font-size: 2rem;
+    animation: text 5s 0s alternate-reverse infinite;
+  }
+
+
+  @keyframes text{
+    from{opacity: 50%;
+    transform: skewX(10deg);}
+    to{opacity: 90%;
+        transform: skewX(-5deg);}
   }
 
 

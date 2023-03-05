@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
@@ -49,6 +52,12 @@
 <section>
 <div class="text1">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quidem, impedit quis voluptates inventore dolores natus! Porro fuga nostrum vel</p>
+
+    <svg><filter id="noise">
+        <feTurbulence baseFrequency="1.2 1.2" result="NOISE" numOctaves="2" id="turbulence"/>
+        <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="25"></feDisplacementMap>
+       </filter></svg> 
+
 </div>
 
 
@@ -67,14 +76,11 @@
 </svg>
 
 <svg class="outer" width="450" height="424" viewBox="0 0 450 424" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M225 424C349.264 424 450 329.084 450 212C450 94.9156 349.264 0 225 0C100.736 0 0 94.9156 0 212C0 329.084 100.736 424 225 424ZM91.2162 120.178C72.1622 136.382 66.4824 174.625 66.8919 212C67.1946 239.626 72.2414 255.215 81.4865 280.866C98.7116 328.658 112.682 362.517 154.459 384.841C209.696 414.357 258.673 392.772 308.919 353.783C349.106 322.6 367.893 292.526 381.892 240.357C382.322 238.755 382.747 237.177 383.167 235.622C391.774 203.707 397.897 181 387.973 148.535C367.62 81.9558 237.162 82.3694 237.162 82.3694C229.035 81.2237 220.889 78.7763 212.547 76.2699C194.671 70.8993 175.891 65.2572 154.459 71.5669C133.639 77.6965 119.957 91.6987 106.856 105.106C101.686 110.396 96.6074 115.594 91.2162 120.178Z" fill="#00FFFF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M225 424C349.264 424 450 329.084 450 212C450 94.9156 349.264 0 225 0C100.736 0 0 94.9156 0 212C0 329.084 100.736 424 225 424ZM91.2162 120.178C72.1622 136.382 66.4824 174.625 66.8919 212C67.1946 239.626 72.2414 255.215 81.4865 280.866C98.7116 328.658 112.682 362.517 154.459 384.841C209.696 414.357 258.673 392.772 308.919 353.783C349.106 322.6 367.893 292.526 381.892 240.357C382.322 238.755 382.747 237.177 383.167 235.622C391.774 203.707 397.897 181 387.973 148.535C367.62 81.9558 237.162 82.3694 237.162 82.3694C229.035 81.2237 220.889 78.7763 212.547 76.2699C194.671 70.8993 175.891 65.2572 154.459 71.5669C133.639 77.6965 119.957 91.6987 106.856 105.106C101.686 110.396 96.6074 115.594 91.2162 120.178Z" fill="radial-gradient(circle, rgba(18,93,124,1) 34%, rgba(0,255,255,1) 100%);"/>
 </svg>
 
 
-<svg><filter id="noise">
-    <feTurbulence baseFrequency="1.2 1.2" result="NOISE" numOctaves="2" id="turbulence"/>
-    <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="25"></feDisplacementMap>
-   </filter></svg> 
+
 
             
     </div>
